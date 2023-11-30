@@ -1,0 +1,18 @@
+﻿<Window x:Class="RGBMixer.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:RGBMixer"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <StackPanel>
+        <Slider x:Name="posuvnikR" Minimum="0" Maximum="255" Height="1 in" Background="Red"/>
+        <Slider x:Name="posuvnikG" Minimum="0" Maximum="255" Height="1 in" Background="Green"/>
+        <Slider x:Name="posuvnikB" Minimum="0" Maximum="255" Height="1 in" Background="Blue"/>
+
+        <Button x:Name="btnBarva" Content="Převést na barvu" FontSize="22" FontWeight="Bold" Click="btnBarva_Click"/>
+        <Label x:Name="LabelMeneny" Width="600" Margin="50, 20, 50 0" Height="200" Background="Aqua"/>
+        
+    </StackPanel>
+</Window>
